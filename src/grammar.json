@@ -5267,6 +5267,13 @@
             ]
           },
           {
+            "type": "REPEAT",
+            "content": {
+              "type": "SYMBOL",
+              "name": "attribute_declaration"
+            }
+          },
+          {
             "type": "CHOICE",
             "members": [
               {

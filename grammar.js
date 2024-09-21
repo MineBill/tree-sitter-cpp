@@ -285,6 +285,7 @@ module.exports = grammar(C, {
     enum_specifier: $ => prec.right(seq(
       'enum',
       optional(choice('class', 'struct')),
+      repeat($.attribute_declaration),
       choice(
         seq(
           field('name', $._class_name),
